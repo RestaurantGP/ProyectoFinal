@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Proyecto Final</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css"/>
+    
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/tree.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body id="page-top" ng-app="myApp" ng-controller="myCtrl">
+
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">Granjirero</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Servicios</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#estructura">Estructura
+                    Administrativa</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                                     href="#contactos-proveedores">Contacto/Proveedores</a>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#sugerencias">Sugerencias</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        
+        <img class="masthead-avatar mb-5" src="assets/img/avatar.svg" alt="..."/>
+        
+        <h1 class="masthead-heading text-uppercase mb-0">Granjirero</h1>
+        
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <p class="masthead-subheading font-weight-light mb-0">Pollo frito!</p>
+    </div>
+</header>
+
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Servicios</h2>
+        
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <div class="row justify-content-center">
+            
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <strong>Harinas</strong>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/suplementos.jpg" alt="..."/>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <strong>Pimientas</strong>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/incubadoras.jpg" alt="..."/>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <strong>Aceites</strong>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/utencilios.jpg" alt="..."/>
+                </div>
+            </div>
+            
+            <div class="col-md-12 col-lg-4 mb-5 mb-lg-0">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <strong>Papas</strong>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/libros.jpeg" alt="..."/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="page-section bg-primary text-white mb-0" id="estructura">
+    <div class="container">
+        
+        <h2 class="page-section-heading text-center text-uppercase text-white">Estructura administrativa</h2>
+        
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-10 offset-2 text-center">
+                <ul class="tree">
+                    <li><span>Gerente General</span>
+                        <ul>
+                            <li><span>Ventas</span>
+                                <ul>
+                                    <li><span>Administrador sucursal 1</span>
+                                    </li>
+                                    <li><span>Administrador sucursal 2</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Producción</span>
+                                <ul>
+                                    <li><span>Harinas</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Finanzas</span>
+                                <ul>
+                                    <li><span>Contabilidad</span>
+                                        <ul>
+                                            <li><span>Cajas</span></li>
+                                            <li><span>Asistentes</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Compras/Proveeduria</span>
+                                <ul>
+                                    <li><span>Asistentes</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>RRHH</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="contactos-proveedores">
+    <div class="container">
+        
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactos/Proveedores</h2>
+        
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-xl-12">
+
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="c in contacts||[]">
+                        <th scope="row">{{$index+1}}</th>
+                        <td>
+                            <span ng-show="!c.editable">{{c.nombre}}</span>
+                            <input type="text" ng-show="c.editable" ng-value="c.nombre" ng-model="c.nombre">
+                        </td>
+                        <td>
+                            <span ng-show="!c.editable">{{c.apellido}}</span>
+                            <input type="text" ng-show="c.editable" ng-value="c.apellido" ng-model="c.apellido"/>
+                        </td>
+                        <td>
+                            <span ng-show="!c.editable">{{c.telefono}}</span>
+                            <input type="text" ng-show="c.editable" ng-value="c.telefono" ng-model="c.telefono"/>
+                        </td>
+                        <td>
+                            <span ng-show="!c.editable">{{c.correo}}</span>
+                            <input type="text" ng-show="c.editable" ng-value="c.correo" ng-model="c.correo"/>
+                        </td>
+                        <td>
+                            <select name="singleSelect" id="singleSelect" ng-model="c.tipo">
+                                <option value="cliente">Cliente</option>
+                                <option value="proveedor">Proveedor</option>
+                            </select>
+                        </td>
+                        <td style="display:online">
+                            <li class="list-inline-item" ng-show="!c.editable">
+                                <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
+                                        data-placement="top" title="Editar" ng-click="modificar(c.id)"><i
+                                        class="fa fa-edit"></i></button>
+                            </li>
+                            <li class="list-inline-item" ng-show="c.editable">
+                                <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
+                                        data-placement="top" title="Guardar" ng-click="salvar(c.id)"><i
+                                        class="fa fa-check"></i></button>
+                            </li>
+                            <li class="list-inline-item">
+                                <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
+                                        data-placement="top" title="Eliminar" ng-click="eliminar(c.id)"><i
+                                        class="fa fa-trash"></i></button>
+                            </li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
+                                        data-placement="top" title="Agregar" ng-click="agregar()"><i
+                                        class="fa fa-plus"></i>Agregar</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section bg-primary" id="sugerencias">
+    <div class="container">
+        
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Sugerencias</h2>
+        
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                
+                
+                
+                
+                
+                
+                
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text"
+                                  placeholder="Ingrese su sugerencia aqui..." style="height: 10rem"
+                                  data-sb-validations="required"></textarea>
+                        <label for="message">Sugerencia:</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">¡Sugerencia enviada, muchas gracias!</div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Ubicación</h4>
+                <p class="lead mb-0">
+                    30402
+                    <br/>
+                    Cartago, Costa Rica
+                </p>
+            </div>
+            
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Siganos en...</h4>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright &copy; GRAJIRERO 2021</small></div>
+</div>
+
+
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Suplementos</h2>
+                            
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            
+                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/suplementos.jpg" alt="..."/>
+                            
+                            <p class="mb-4">El mejor alimento que sus aves pueden comer es el alimento basado en
+                                productos naturales.</p>
+                            <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Cerrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Incubadoras</h2>
+                            
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            
+                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/incubadoras.jpg" alt="..."/>
+                            
+                            <p class="mb-4">Si quiere que sus huevos se desarrollen sanos y fuertes debe comenzar por
+                                incubación adecuada, adquiera aquí nuestras maquinas alemanas capaces de dar vida a sus
+                                aves.</p>
+                            <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Cerrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Harinas</h2>
+                            
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            
+                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/utencilios.jpg" alt="..."/>
+                            
+                            <p class="mb-4">Cansado de ver como su alimento se desperdicia? Cansado de estar siempre
+                                rellenando sus comederos?<br>Estos utencilios son los que usteed necesita, ahora
+                                disponibles en colores rojo y negro.</p>
+                            <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Cerrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Libreria</h2>
+                            
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            
+                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/libros.jpg" alt="..."/>
+                            
+                            <p class="mb-4">Aprenda más sobre sus aves, deje de creer en supersticiones e informese con
+                                datos comprobados cientificamente.</p>
+                            <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Cerrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+  $scope.contacts= [];
+
+          var getDatos = function(){
+
+              function getContacts(){
+                var newContacts = [];
+                var mario = {
+                    id: Date.now() + Math.random(),
+                    nombre: 'Mario',
+                    apellido: 'Castro',
+                    telefono: '+50623456423',
+                    correo: 'mcastro@micorreo.com',
+                    tipo: 'cliente'
+                };
+                var ronald = {
+                    id: Date.now() + Math.random(),
+                    nombre: 'Ronald',
+                    apellido: 'Brenes',
+                    telefono: '+506436574',
+                    correo: 'mcastro@miplantas.com',
+                    tipo: 'cliente'
+                };
+                var marta = {
+                    id: Date.now() + Math.random(),
+                    nombre: 'Marta',
+                    apellido: 'Lopez',
+                    telefono: '+506324567584',
+                    correo: 'mlopez@empresa2.com',
+                    tipo: 'cliente'
+                };
+                newContacts.push(mario);
+                newContacts.push(ronald);
+                newContacts.push(marta);
+                return newContacts;
+              }
+
+              var contacts = localStorage.getItem('contacts');
+              if(!contacts || contacts.length == 0){
+                contacts = getContacts();
+                localStorage.setItem('contacts', JSON.stringify(contacts));
+              }else{
+                contacts = JSON.parse(localStorage.getItem('contacts'));
+              }
+
+                //****************************************suppliers****************************************
+              function getSuppliers(){
+                var newSuppliers = [];
+                var bryan = {
+                    id: Date.now() + Math.random(),
+                    nombre: 'Bryan',
+                    apellido: 'Testeo',
+                    telefono: '+50689765432',
+                    correo: 'btesteo@micorreo.com',
+                    tipo: 'proveedor'
+                };
+                var carlos = {
+                    id: Date.now() + Math.random(),
+                    nombre: 'Carlos',
+                    apellido: 'Alpizar',
+                    telefono: '+50632454657',
+                    correo: 'calpizar@delrio.com',
+                    tipo: 'proveedor'
+                };
+                var sonia = {
+                    id: Date.now() + Math.random(),
+                    nombre: 'Sonia',
+                    apellido: 'Perez',
+                    telefono: '+506324567584',
+                    correo: 'sperez@company3.com',
+                    tipo: 'proveedor'
+                };
+                newSuppliers.push(bryan);
+                newSuppliers.push(carlos);
+                newSuppliers.push(sonia);
+                return newSuppliers;
+              }
+
+              var suppliers = localStorage.getItem('suppliers');
+              if(!suppliers || suppliers.length == 0){
+                suppliers = getSuppliers();
+                localStorage.setItem('suppliers', JSON.stringify(suppliers));
+              }else{
+                suppliers = JSON.parse(localStorage.getItem('suppliers'));
+              }
+
+              return {"suppliers": suppliers, "contacts": contacts};
+          };
+          var datos = getDatos();
+          var newRecords = [];
+          newRecords =  newRecords.concat(datos['suppliers']);
+          newRecords =  newRecords.concat(datos['contacts']);
+          $scope.contacts = newRecords;
+          var actualizarDB = function(){
+            var contacts = [];
+            var suppliers = [];
+            for( var i = 0; i < $scope.contacts.length; i++){
+
+                if ( $scope.contacts[i].tipo === 'cliente') {
+                    contacts.push($scope.contacts[i]);
+                }else{
+                    suppliers.push($scope.contacts[i]);
+                }
+            }
+            localStorage.setItem('suppliers', JSON.stringify(suppliers));
+            localStorage.setItem('contacts', JSON.stringify(contacts));
+          };
+          $scope.modificar = function(id, data){
+            var contact = $scope.contacts.find(element => element.id==id);
+            if(contact){
+                contact.editable = contact.editable == null ? true: !contact.editable;
+                if(data){
+                    contact.nombre = data.nombre;
+                    contact.apellido = data.apellido;
+                    contact.telefono = data.telefono;
+                    contact.correo = data.correo;
+                    contact.tipo = data.tipo;
+                }
+            }
+            actualizarDB();
+          }
+          $scope.salvar = function(id){
+            var contact = $scope.contacts.find(element => element.id==id);
+            if(contact){
+                contact.editable = false;
+            }
+            debugger;
+            actualizarDB();
+
+          }
+          $scope.eliminar = function(id){
+
+            if(confirm("Seguro que desea eliminar el contacto?")){
+                    for( var i = 0; i < $scope.contacts.length; i++){
+
+                        if ( $scope.contacts[i].id === id) {
+                            arr.splice(i, 1);
+                        }
+                        actualizarDB();
+
+                    }
+                   
+            }
+
+          }
+          $scope.agregar = function(){
+            var newId = Date.now() + Math.random();
+            var data = {
+                    id: newId,
+                    nombre: '',
+                    apellido: '',
+                    telefono: '',
+                    correo: '',
+                    tipo: ''
+            };
+            $scope.contacts.push(data);
+            this.modificar(newId);
+          }
+
+});
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/scripts.js"></script>
+
+
+
+
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
